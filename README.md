@@ -72,6 +72,12 @@ Welcome to the **PowerShell Utility Scripts** repository! This collection includ
 
 ---
 
+### 12. **Clear Microsoft Teams Cache**
+**Description**: Clear all the cache folders for Microsoft Teams.  
+**Usage**: Needs admnin privileges.
+
+---
+
 ## 🚀 How to Use These Scripts
 
 ### Running the Scripts
