@@ -1,5 +1,18 @@
 # ⚡ PowerShell Utility Scripts
 
+<p align="center">
+  <a href="https://learn.microsoft.com/powershell/">
+    <img src="https://img.shields.io/badge/PowerShell-5.1%2B-blue.svg?logo=powershell" alt="PowerShell">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License">
+  </a>
+  <a href="https://github.com/kasuken/PowerShell-Utility-Scripts/stargazers">
+    <img src="https://img.shields.io/github/stars/kasuken/PowerShell-Utility-Scripts?style=social" alt="GitHub stars">
+  </a>
+</p>
+
+
 A curated collection of **PowerShell scripts** to boost productivity, automate repetitive tasks, and optimize system performance.
 From cleaning up your PC to generating system reports — this repo has you covered.
 
