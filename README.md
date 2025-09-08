@@ -2,6 +2,10 @@
 
 Welcome to the **PowerShell Utility Scripts** repository! This collection includes a variety of useful PowerShell scripts designed to enhance productivity, automate tasks, and optimize system performance. Each script serves a unique purpose, from system cleanup to managing OneDrive storage.
 
+<p align="center">
+   <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e9fb2a5a-886d-4924-aea8-ef29f3768699" />
+</p>
+
 ---
 
 ## 📜 Scripts Included
