@@ -112,3 +112,7 @@ Thanks for checking out **PowerShell Utility Scripts**!
 If you find this project helpful, please give it a ⭐ and share it with others.
 
 ---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20with%20💙%20in-PowerShell-5391FE?logo=powershell&logoColor=white&style=for-the-badge" alt="Made with 💙 in PowerShell">
+</p>
