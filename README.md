@@ -89,6 +89,13 @@ Welcome to the **PowerShell Utility Scripts** repository! This collection includ
 
 ---
 
+### 14. **Windows Update Checker & Installer**
+
+**Description**: Checks for pending Windows updates and optionally downloads or installs them. Supports filtering by categories (e.g., Security, Critical), including or excluding driver updates, exporting results to CSV, and enabling automatic reboots after installation. Falls back to the native Windows Update API if the `PSWindowsUpdate` module is not available.
+**Usage**: Keep your system secure and up to date with minimal effort by checking, downloading, or installing updates directly from PowerShell.
+
+---
+
 ## 🚀 How to Use These Scripts
 
 ### Running the Scripts
