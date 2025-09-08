@@ -96,6 +96,13 @@ Welcome to the **PowerShell Utility Scripts** repository! This collection includ
 
 ---
 
+### 15. **Wi-Fi Password Viewer**
+
+**Description**: Retrieves saved Wi-Fi profiles from the system and displays their SSIDs, authentication type, cipher, and stored passwords. Supports filtering by SSID, masking or unmasking passwords, including open networks, and exporting results to CSV.
+**Usage**: Quickly recover forgotten Wi-Fi passwords or document saved wireless networks securely.
+
+---
+
 ## 🚀 How to Use These Scripts
 
 ### Running the Scripts
