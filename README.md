@@ -82,6 +82,13 @@ Welcome to the **PowerShell Utility Scripts** repository! This collection includ
 
 ---
 
+### 13. **Large Files Finder**
+
+**Description**: Scans a specified drive or folder recursively to locate large files above a chosen size threshold. Provides details such as file size, path, and last modified date, with options to filter by age, exclude directories or file types, and export results to CSV.
+**Usage**: Quickly identify and manage space-hogging files to free up disk space or prepare for archiving.
+
+---
+
 ## 🚀 How to Use These Scripts
 
 ### Running the Scripts
