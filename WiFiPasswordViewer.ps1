@@ -104,7 +104,7 @@ if (-not $xmls -or $xmls.Count -eq 0) {
     return
 }
 
-$profiles = foreach ($x in $xmls) { Read-WlanProfileXml -Path $x.FullName } | Where-Object { $_ -ne $null }
+$profiles = $xmls | ForEach-Object { Read-WlanProfileXml -Path $_.FullName } | Where-Object { $_ -ne $null }
 
 # Filter by open networks
 if (-not $IncludeOpenNetworks) {

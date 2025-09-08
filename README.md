@@ -103,6 +103,13 @@ Welcome to the **PowerShell Utility Scripts** repository! This collection includ
 
 ---
 
+### 16. **System Information Report Generator**
+
+**Description**: Collects detailed system information including OS version, hardware specs, storage usage, network configuration, and recent hotfixes. Outputs the data as a structured Markdown report that can be used for audits, troubleshooting, or documentation.
+**Usage**: Generate professional system reports in Markdown format for quick sharing or long-term inventory tracking.
+
+---
+
 ## 🚀 How to Use These Scripts
 
 ### Running the Scripts
