@@ -1,180 +1,101 @@
-# PowerShell Utility Scripts
+# ⚡ PowerShell Utility Scripts
 
-Welcome to the **PowerShell Utility Scripts** repository! This collection includes a variety of useful PowerShell scripts designed to enhance productivity, automate tasks, and optimize system performance. Each script serves a unique purpose, from system cleanup to managing OneDrive storage.
+A curated collection of **PowerShell scripts** to boost productivity, automate repetitive tasks, and optimize system performance.
+From cleaning up your PC to generating system reports — this repo has you covered.
 
 <p align="center">
-   <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e9fb2a5a-886d-4924-aea8-ef29f3768699" />
+   <img width="800" alt="PowerShell Utility Scripts" src="https://github.com/user-attachments/assets/e9fb2a5a-886d-4924-aea8-ef29f3768699" />
 </p>
 
 ---
 
-## 📜 Scripts Included
+## 📜 Scripts Overview
 
-### 1. **Scheduled System Cleanup**
-**Description**: Cleans up temporary files, empties the recycle bin, and clears browser caches for major browsers (Edge, Chrome, Firefox).  
-**Usage**: Keep your system clean and optimized with a simple execution or schedule.
-
----
-
-### 2. **Automated Backup of Important Folders**
-**Description**: Copies files from predefined folders (e.g., Documents) to a specified destination (external drive or cloud storage) while preserving folder structure.  
-**Usage**: Ideal for automating regular backups and protecting critical data.
-
----
-
-### 3. **Manage Startup Apps**
-**Description**: Lists and allows the removal of startup applications from the registry and startup folder.  
-**Usage**: Simplify your boot process and optimize system performance by managing unnecessary startup programs.
-
----
-
-### 4. **Automated Shutdown or Sleep Mode**
-**Description**: Automatically shuts down, restarts, or puts the system into sleep mode after inactivity or at a scheduled time.  
-**Usage**: Save power and secure your workstation during downtime.
+| #  | Script                                    | Description                                                                        | Usage                                              |
+| -- | ----------------------------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 1  | **Scheduled System Cleanup**              | Cleans up temporary files, recycle bin, and browser caches.                        | Keep your system clean and optimized.              |
+| 2  | **Automated Backup of Important Folders** | Copies predefined folders (e.g., Documents) to external/cloud destinations.        | Automate backups to protect critical data.         |
+| 3  | **Manage Startup Apps**                   | Lists and removes startup applications from registry & startup folders.            | Optimize boot time by disabling unnecessary apps.  |
+| 4  | **Automated Shutdown or Sleep Mode**      | Shuts down, restarts, or sleeps the system after inactivity or at scheduled times. | Save energy and secure your system.                |
+| 5  | **System Health Check**                   | Monitors CPU, RAM, and disk usage with a performance report.                       | Identify bottlenecks and monitor resources.        |
+| 6  | **Empty Clipboard History**               | Clears current clipboard contents and history.                                     | Protect sensitive data.                            |
+| 7  | **Auto-Lock Screen After Inactivity**     | Locks the screen after inactivity or at a scheduled time.                          | Enhance security on shared systems.                |
+| 8  | **Remove Local Version from OneDrive**    | Removes synced OneDrive files, keeping them only online.                           | Free up disk space without losing files.           |
+| 9  | **Disk Usage Analyzer**                   | Scans directories and reports folder sizes.                                        | Find space-hogging folders easily.                 |
+| 10 | **Network Speed Test Utility**            | Tests and logs upload/download speeds via API.                                     | Track network performance over time.               |
+| 11 | **Windows Services Manager**              | Lists services and allows interactive start/stop/restart.                          | Manage Windows services efficiently.               |
+| 12 | **Clear Microsoft Teams Cache**           | Deletes Teams cache folders.                                                       | Fix Teams issues (admin rights required).          |
+| 13 | **Large Files Finder**                    | Finds large files with filters and optional CSV export.                            | Free up space by locating big files.               |
+| 14 | **Windows Update Checker & Installer**    | Checks/downloads/installs Windows Updates (with reboot option).                    | Keep Windows secure and up to date.                |
+| 15 | **Wi-Fi Password Viewer**                 | Retrieves stored Wi-Fi SSIDs and passwords.                                        | Recover or document Wi-Fi credentials.             |
+| 16 | **System Information Report Generator**   | Creates detailed system reports in Markdown.                                       | Use for audits, troubleshooting, or documentation. |
 
 ---
 
-### 5. **System Health Check**
-**Description**: Monitors and reports on CPU, RAM, and disk usage, providing a summary of system performance.  
-**Usage**: Use it to keep track of system resource usage or identify performance bottlenecks.
+## 🚀 Getting Started
+
+### 🔹 Run a Script
+
+```powershell
+# Clone this repository
+git clone https://github.com/kasuken/PowerShell-Utility-Scripts.git
+cd PowerShell-Utility-Scripts
+
+# Execute the desired script
+./ScriptName.ps1
+```
 
 ---
 
-### 6. **Empty Clipboard History**
-**Description**: Clears the current clipboard content and removes clipboard history for added security.  
-**Usage**: Protect sensitive data by ensuring clipboard contents are not stored locally.
+### ⏰ Automate with Task Scheduler
 
----
+You can schedule scripts to run automatically with **Task Scheduler**:
 
-### 7. **Auto-Lock Screen After Inactivity**
-**Description**: Locks the screen after a period of inactivity or at a specified scheduled time.  
-**Usage**: Ideal for enhancing security in shared or unattended environments.
+1. Press `Win + R`, type `taskschd.msc`, and press Enter.
+2. Select **Create Task**.
+3. In **General**:
 
----
+   * Name the task.
+   * Select **Run whether user is logged on or not**.
+   * Check **Run with highest privileges**.
+4. In **Triggers**:
 
-### 8. **Remove Local Version from OneDrive**
-**Description**: Removes locally synced OneDrive files, keeping them stored only in the cloud.  
-**Usage**: Free up disk space while keeping your files accessible online.
+   * Add a new trigger (e.g., Daily at 9 AM).
+5. In **Actions**:
 
----
+   * Program/script: `powershell.exe`
+   * Arguments:
 
-### 9. **Disk Usage Analyzer**
-**Description**: Scans specified directories and generates a report of folder sizes, sorted by size.  
-**Usage**: Quickly identify space-hogging folders to manage disk space effectively.
-
----
-
-### 10. **Network Speed Test Utility**
-**Description**: Tests network upload and download speeds using a public API and logs results for future comparison.  
-**Usage**: Measure and track your network performance over time.
-
----
-
-### 11. **Windows Services Manager**
-**Description**: Lists running, stopped, or disabled services and allows users to start, stop, or restart selected services interactively.  
-**Usage**: Manage critical Windows services efficiently.
-
----
-
-### 12. **Clear Microsoft Teams Cache**
-**Description**: Clear all the cache folders for Microsoft Teams.  
-**Usage**: Needs admnin privileges.
-
----
-
-### 13. **Large Files Finder**
-
-**Description**: Scans a specified drive or folder recursively to locate large files above a chosen size threshold. Provides details such as file size, path, and last modified date, with options to filter by age, exclude directories or file types, and export results to CSV.
-**Usage**: Quickly identify and manage space-hogging files to free up disk space or prepare for archiving.
-
----
-
-### 14. **Windows Update Checker & Installer**
-
-**Description**: Checks for pending Windows updates and optionally downloads or installs them. Supports filtering by categories (e.g., Security, Critical), including or excluding driver updates, exporting results to CSV, and enabling automatic reboots after installation. Falls back to the native Windows Update API if the `PSWindowsUpdate` module is not available.
-**Usage**: Keep your system secure and up to date with minimal effort by checking, downloading, or installing updates directly from PowerShell.
-
----
-
-### 15. **Wi-Fi Password Viewer**
-
-**Description**: Retrieves saved Wi-Fi profiles from the system and displays their SSIDs, authentication type, cipher, and stored passwords. Supports filtering by SSID, masking or unmasking passwords, including open networks, and exporting results to CSV.
-**Usage**: Quickly recover forgotten Wi-Fi passwords or document saved wireless networks securely.
-
----
-
-### 16. **System Information Report Generator**
-
-**Description**: Collects detailed system information including OS version, hardware specs, storage usage, network configuration, and recent hotfixes. Outputs the data as a structured Markdown report that can be used for audits, troubleshooting, or documentation.
-**Usage**: Generate professional system reports in Markdown format for quick sharing or long-term inventory tracking.
-
----
-
-## 🚀 How to Use These Scripts
-
-### Running the Scripts
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/PowerShell-Utility-Scripts.git
-   cd PowerShellUtilityScripts
-   ```
-2. Execute the desired script:
-   ```powershell
-   ./ScriptName.ps1
-   ```
-
----
-
-### Scheduling Scripts with Task Scheduler
-You can automate the execution of these scripts using Windows Task Scheduler:
-
-1. **Open Task Scheduler**:
-   - Press `Win + R`, type `taskschd.msc`, and press Enter.
-
-2. **Create a New Task**:
-   - Click on `Create Task` in the right-hand menu.
-
-3. **Configure General Settings**:
-   - Provide a name for the task.
-   - Select `Run whether user is logged on or not`.
-   - Check `Run with highest privileges`.
-
-4. **Set the Trigger**:
-   - Add a new trigger (e.g., daily or at a specific time).
-
-5. **Set the Action**:
-   - Choose `Start a Program` and set:
-     - **Program/script**: `powershell.exe`
-     - **Add arguments**: `-ExecutionPolicy Bypass -File "C:\Path\To\ScriptName.ps1"`
-
-6. **Save the Task**:
-   - Click OK, and provide your credentials if prompted.
-
-The script will now run automatically based on the schedule.
+     ```powershell
+     -ExecutionPolicy Bypass -File "C:\Path\To\ScriptName.ps1"
+     ```
+6. Save, provide credentials, and you’re done! ✅
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have ideas for new scripts, enhancements, or bug fixes, feel free to:
+Contributions are always welcome! 💡
 
-1. Fork this repository.
-2. Create a new branch for your changes.
-3. Submit a pull request with a detailed explanation.
+* Fork this repo
+* Create a feature branch
+* Commit your changes
+* Submit a Pull Request
 
-### Suggestions or Issues?
-Open an [issue](https://github.com/kasuken/PowerShell-Utility-Scripts/issues) to report bugs or suggest new features.
+Got an idea for a new script? Open an [issue](https://github.com/kasuken/PowerShell-Utility-Scripts/issues).
 
 ---
 
 ## 📝 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**.
+See the [LICENSE](LICENSE) file for more details.
 
 ---
 
 ## ⭐ Acknowledgments
 
-Thank you for using these PowerShell scripts! If you find this repository helpful, please give it a star 🌟 and share it with others.
+Thanks for checking out **PowerShell Utility Scripts**!
+If you find this project helpful, please give it a ⭐ and share it with others.
 
 ---
